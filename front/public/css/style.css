@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* Header */
+header {
+  width: 100%;
+  display: block;
+  min-height: 50px;
+  background-color: brown;
+}
+
+/* Main */
+main {
+  width: 100%;
+  display: block;
+  min-height: 300px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  display: block;
+  min-height: 300px;
+  min-height: 50px;
+  background-color: brown;
+}
