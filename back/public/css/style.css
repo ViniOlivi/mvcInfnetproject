@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* Header */
+header {
+  width: 100%;
+  display: block;
+  min-height: 50px;
+  background-color: rgb(238, 223, 241);
+}
+
+/* Main */
+main {
+  width: 100%;
+  display: block;
+  min-height: 300px;
+  background-image: url(/front/img/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main banner {
+  background-image: url(/front/img/banner.jpg);
+  display: flex;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  display: block;
+  min-height: 300px;
+  min-height: 50px;
+  background-color: brown;
+}
