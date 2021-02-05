@@ -4,26 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="../front/public/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
-
-    <title>Gerador de Algo - Sobre</title>
-
+    <title>RockeRoll - Buy</title>
 </head>
 
-<body>
+<body class="full_body">
 
-    <header>Header</header>
+    <header>
+        <div class="menu">
+            <div class="logo"><a href="index.html"><img src="./img/logo9.svg" alt="logo RockeRoll"></a></div>
+
+            <div class="list_menu">
+                <ul>
+                    <li>home</li>
+                    <li>buy</li>
+                    <li>about</li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
     <main>
         <div class="form_generator">
-            <form action="">
+            <form action="/form" method="POST">
 
                 <div class="slice">
-                    <div class="title">Informações Pessoais</div>
+                    <div class="title">Ticket to Rock </div>
 
                     <div class="form_group">
-                        <label for="name">Nome:</label>
+                        <label for="name">Name:</label>
                         <input type="text" name="name" placeholder="Insira o nome">
                     </div>
 
@@ -33,37 +47,33 @@
                     </div>
 
                     <div class="form_group">
-                        <label for="age">Nascimento:</label>
+                        <label for="age">Birth:</label>
                         <input type="text" name="age" placeholder="Insira a sua idade">
                     </div>
 
                     <div class="form_group gender">
-                        <label for="">Sexo:</label>
+                        <label for="">Section:</label>
                         <input type="radio" name="gender" value="1" checked> Masculino
                         <input type="radio" name="gender" value="2"> Feminino
                     </div>
 
-                    <div class="form_group gender">
-                        <label for="marital_status">Estado Civil:</label>
-                        <select name="marital_status">
-                            <option value="1">Solteiro</option>
-                            <option value="1">Casado</option>
-                            <option value="1">Outro</option>
+                    <div class="form_group section">
+                        <label for="zone_selection">Day(s)</label>
+                        <select name="zone_selection">
+                            <option value="1">V.I.P</option>
+                            <option value="1">Standard</option>
+                            <option value="1">Open Bar</option>
                         </select>
+
                     </div>
-
-                    <button type="submit">Enviar</button>
-
+                    <button type="submit">Let's Rock</button>
                 </div>
             </form>
-
 
         </div>
     </main>
 
-    <footer>Footer</footer>
+    <footer class="foot">Copyrigth - Vinicius Olivi - 2021</footer>
 </body>
-
-</html>
 
 </html>

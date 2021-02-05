@@ -7,32 +7,30 @@
 /* Header */
 header {
   width: 100%;
-  display: block;
-  min-height: 50px;
-  background-color: rgb(238, 223, 241);
+  display: flex;
+  height: 100px;
+  background-color: #d00000;
 }
 
 /* Main */
 main {
   width: 100%;
-  display: block;
-  min-height: 300px;
-  background-image: url(/front/img/banner.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+  min-height: 517px;
+  background-color: black;
+  display: flex;
 }
 
-main banner {
-  background-image: url(/front/img/banner.jpg);
+.form_group {
+  width: 400px;
   display: flex;
-  align-items: center;
+  background-color: blue;
+  margin-left: 40px;
 }
 
 /* Footer */
 footer {
   width: 100%;
-  display: block;
-  min-height: 300px;
-  min-height: 50px;
-  background-color: brown;
+  height: 50px;
+  display: flex;
+  background-color: #d00000;
 }
