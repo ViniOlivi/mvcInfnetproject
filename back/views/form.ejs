@@ -5,20 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="imagem/png" href="./img/nav.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
-    <title>Gerador de Algo - Sobre</title>
+    <title>RockeRoll - Ticket</title>
 </head>
 
-<body>
+<body class="full_body">
 
-    <header>Header</header>
+    <header>
+        <div class="menu">
+            <div class="logo"><a href="index.html"><img src="../public/img/logo.jpg" alt="logo RockeRoll"></a></div>
 
-    <main>
+            <div class="list_menu">
+                <ul>
+                    <li><a href="../views/index.ejs">home</a></li>
+                    <li>ticket</li>
+                    <li>about</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main_form">
+        <!-- <div class="banner">
+            <img src="./img/img1.jpeg" alt="">
+        </div> -->
+
         <div class="form_generator">
             <form action="/form" method="POST">
 
                 <div class="slice">
-                    <div class="title">Ticket to Rock </div>
+                    <div class="title">buy your ticket </div>
 
                     <div class="form_group">
                         <label for="name">Name:</label>
@@ -36,20 +57,21 @@
                     </div>
 
                     <div class="form_group gender">
-                        <label for="">Section:</label>
+                        <label for="">Gender:</label>
                         <input type="radio" name="gender" value="1" checked> Masculino
                         <input type="radio" name="gender" value="2"> Feminino
                     </div>
 
+
                     <div class="form_group section">
                         <label for="zone_selection">Day(s)</label>
                         <select name="zone_selection">
-                            <option value="1">V.I.P</option>
-                            <option value="1">Standard</option>
-                            <option value="1">Open Bar</option>
+                            <option value="1"> Beatles </option>
+                            <option value="1"> Queen </option>
+                            <option value="1"> Stones </option>
                         </select>
 
-                    </div>
+                    </div id="btn">
                     <button type="submit">Let's Rock</button>
                 </div>
             </form>
@@ -57,7 +79,15 @@
         </div>
     </main>
 
-    <footer>Footer</footer>
+    <footer class="foot">
+        <p>© Copyright 2021-2022 - Vinicius Olivi</p>
+        <ul class="socials">
+            <li><a href="http://facebook.com" target="_blank"><img src="./img/redes-sociais/facebook.svg" alt="Facebook RockeRoll"></a></li>
+            <li><a href="http://instagram.com" target="_blank"><img src="./img/redes-sociais/instagram.svg" alt="Instagram RockeRoll"></a></li>
+            <li><a href="http://twitter.com" target="_blank"><img src="./img/redes-sociais/twitter.svg" alt="Twitter RockeRoll"></a></li>
+
+        </ul>
+    </footer>
 </body>
 
 </html>
