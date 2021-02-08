@@ -4,6 +4,15 @@
   outline: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
 /* Header */
 header {
   width: 0 auto;
@@ -41,7 +50,7 @@ header {
   padding: 10px 20px;
   border: none;
   background-color: rgba(0, 0, 0, 0.801);
-  color: #ffdf00;
+  color: #fec63e;
   text-transform: uppercase;
   border-radius: 10px;
   font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
@@ -56,35 +65,106 @@ header {
 /* Main */
 
 main {
-  width: 100%;
-  min-height: 540px;
-  background-color: black;
+  width: 0 auto;
+  min-height: 466px;
+  background-color: #0d0c0b; /*confirmar*/
+  display: block;
+}
+
+.main_form {
+  width: 0 auto;
+  min-height: 510px;
+  background-color: #000; /*confirmar*/
+  display: block;
+  background-image: url(../../img/img1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 600px 400px;
+  padding: 10px;
+}
+
+.banner img {
+  margin-left: 300px;
   display: flex;
+  width: 600px;
+  height: 400px;
+  padding-top: 30px;
 }
 
 .form_generator {
-  height: 800px;
+  display: flex;
+  justify-content: space-around;
 }
 
+/* escrita do form */
 .slice {
   color: #d00000;
   text-align: center;
+  margin-top: 60px;
+  font-size: 18px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #fec63e;
 }
 
+.title {
+  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  padding-bottom: 30px;
+  font-size: 30px;
+}
+
+/* space inside form*/
 .form_group {
-  /* display: block;
-  width: 400px;
-  height: 50px; */
-  background-color: blue;
-  margin-left: 40px;
+  padding: 5px;
+  height: 30px;
+}
+
+main button {
+  list-style-type: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.925);
+  color: #fec63e;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+main button:hover {
+  transition: 0.4s;
+  color: #ffffff;
 }
 
 /* Footer */
 footer {
   width: 100%;
-  height: 27px;
+  height: 40px;
   display: flex;
   background-color: #d00000;
-  justify-content: center;
-  background-color: #d00000;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.foot p {
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 107px;
+  padding: 10px;
+}
+
+.socials {
+  margin-right: 130px;
+  display: inline-flex;
+  align-items: center;
+}
+
+footer ul li {
+  padding: 0px 10px 0px 10px;
 }
