@@ -14,26 +14,24 @@
     <title>RockeRoll - Ticket</title>
 </head>
 
-<body class="full_body">
+<body>
 
     <header>
         <div class="menu">
-            <div class="logo"><a href="index.html"><img src="../public/img/logo.jpg" alt="logo RockeRoll"></a></div>
+            <div class="logo"><a href="./index.ejs"><img src="./img/logo9.svg" alt="logo RockeRoll"></a>
+            </div>
 
             <div class="list_menu">
                 <ul>
-                    <li><a href="../views/index.ejs">home</a></li>
+                    <li><a href="/index.ejs">home</a></li>
                     <li>ticket</li>
                     <li>about</li>
                 </ul>
             </div>
-        </div>
+
     </header>
 
     <main class="main_form">
-        <!-- <div class="banner">
-            <img src="./img/img1.jpeg" alt="">
-        </div> -->
 
         <div class="form_generator">
             <form action="/form" method="POST">
@@ -64,23 +62,36 @@
 
 
                     <div class="form_group section">
-                        <label for="zone_selection">Day(s)</label>
-                        <select name="zone_selection">
-                            <option value="1"> Beatles </option>
-                            <option value="1"> Queen </option>
-                            <option value="1"> Stones </option>
+                        <label for="selection">Section: </label>
+                        <select name="selection">
+
+                            <option value="" selected> Selection... </option>
+
+                            <% selection.map((item)=> { %>
+
+                                <option value="<%= item.value %>">
+                                    <%= item.label%>
+                                </option>
+                                <% }) %>
+
+
+                                    <!-- <option value="2"> Beatles </option>
+                                    <option value="3"> Queen </option>
+                                    <option value="4"> Stones </option>
+                                    <option value="5"> Strokes </option> -->
                         </select>
 
                     </div id="btn">
                     <button type="submit">Let's Rock</button>
                 </div>
+
             </form>
 
         </div>
     </main>
 
     <footer class="foot">
-        <p>© Copyright 2021-2022 - Vinicius Olivi</p>
+        <p>© Copyright 2021-2022 | Vinicius Olivi</p>
         <ul class="socials">
             <li><a href="http://facebook.com" target="_blank"><img src="./img/redes-sociais/facebook.svg" alt="Facebook RockeRoll"></a></li>
             <li><a href="http://instagram.com" target="_blank"><img src="./img/redes-sociais/instagram.svg" alt="Instagram RockeRoll"></a></li>

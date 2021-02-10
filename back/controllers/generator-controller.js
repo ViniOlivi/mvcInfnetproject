@@ -1,11 +1,13 @@
 const fs = require("fs");
 const ejs = require("ejs");
 const html_to_pdf = require("html-pdf-node");
-
+// Models Import
 const genderModel = require("../models/gender");
+const sectionModel = require("../models/sections");
 
 // GET METHOD
 const handleGetForm = (req, res, next) => {
+  // Gender
   const resultModel = genderModel.getAllGender();
 
   const genderItemsViewModel = resultModel.map((item) => {
@@ -15,8 +17,19 @@ const handleGetForm = (req, res, next) => {
     };
   });
 
+  // Civil Status
+  const statusResult = sectionModel.getAllStatus();
+
+  const civilStatusItemsView = statusResult.map((item) => {
+    return {
+      value: item.id,
+      label: `${item.id} - ${item.description}`,
+    };
+  });
+
   const getViewModel = {
     gender: genderItemsViewModel,
+    selection: civilStatusItemsView,
   };
   res.render("form", getViewModel);
 };
@@ -30,12 +43,14 @@ const handlePostForm = (req, res, next) => {
   // view renderizando form
 
   const genderResult = genderModel.getGenderById(body.gender);
+  const statusResult = sectionModel.getStatusById(body.selection);
 
   const viewModel = {
     name: body.name,
     email: body.email,
     birth: body.age,
     gender: genderResult.description,
+    selection: statusResult.description,
   };
   // Template
 
