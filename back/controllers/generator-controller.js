@@ -17,10 +17,10 @@ const handleGetForm = (req, res, next) => {
     };
   });
 
-  // Civil Status
-  const statusResult = sectionModel.getAllStatus();
+  // Sections (Places)
+  const sectionResult = sectionModel.getAllSections();
 
-  const civilStatusItemsView = statusResult.map((item) => {
+  const sectionsItemsView = sectionResult.map((item) => {
     return {
       value: item.id,
       label: `${item.id} - ${item.description}`,
@@ -29,7 +29,7 @@ const handleGetForm = (req, res, next) => {
 
   const getViewModel = {
     gender: genderItemsViewModel,
-    selection: civilStatusItemsView,
+    selection: sectionsItemsView,
   };
   res.render("form", getViewModel);
 };
@@ -43,14 +43,14 @@ const handlePostForm = (req, res, next) => {
   // view renderizando form
 
   const genderResult = genderModel.getGenderById(body.gender);
-  const statusResult = sectionModel.getStatusById(body.selection);
+  const sectionResult = sectionModel.getSectionsById(body.selection);
 
   const viewModel = {
     name: body.name,
     email: body.email,
     birth: body.age,
     gender: genderResult.description,
-    selection: statusResult.description,
+    selection: sectionResult.description,
   };
   // Template
 

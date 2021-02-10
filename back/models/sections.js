@@ -37,6 +37,6 @@ const getAll = () => {
 };
 
 module.exports = {
-  getAllStatus: getAll,
-  getStatusById: getById,
+  getAllSections: getAll,
+  getSectionsById: getById,
 };
