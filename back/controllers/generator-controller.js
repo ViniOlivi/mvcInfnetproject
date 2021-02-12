@@ -59,13 +59,16 @@ const handlePostForm = (req, res, next) => {
 
   // console.log(htmlText);
 
-  var htmlPronto = ejs.render(htmlText, viewModel);
-  console.log(htmlPronto);
+  var htmlReady = ejs.render(htmlText, viewModel);
+  console.log(htmlReady);
 
   // Transformar em PDF
 
-  let file = { content: htmlPronto };
-  let options = { format: "A4" };
+  let file = { content: htmlReady };
+  let options = {
+    format: "A4",
+    printBackground: true,
+  };
 
   html_to_pdf.generatePdf(file, options).then((pdfBuffer) => {
     res.contentType("application/pdf");

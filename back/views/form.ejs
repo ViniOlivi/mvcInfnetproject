@@ -23,8 +23,8 @@
 
             <div class="list_menu">
                 <ul>
-                    <li><a href="/index.ejs">home</a></li>
-                    <li>ticket</li>
+                    <li><a href="./index">home</li>
+                    <li>ticket</a></li>
                     <li>about</li>
                 </ul>
             </div>
@@ -41,23 +41,23 @@
 
                     <div class="form_group">
                         <label for="name">Name:</label>
-                        <input type="text" name="name" placeholder="Insira o nome">
+                        <input type="text" name="name" placeholder="Your name" required autofocus>
                     </div>
 
                     <div class="form_group">
                         <label for="email">Email:</label>
-                        <input type="email" name="email" placeholder="Insira seu email">
+                        <input type="email" name="email" placeholder="Your email" required>
                     </div>
 
                     <div class="form_group">
                         <label for="age">Birth:</label>
-                        <input type="text" name="age" placeholder="Insira a sua idade">
+                        <input type="date" name="age" placeholder="Your date Of birth" min="1930-01-01" max="2020-12-31" required>
                     </div>
 
                     <div class="form_group gender">
                         <label for="">Gender:</label>
-                        <input type="radio" name="gender" value="1" checked> Masculino
-                        <input type="radio" name="gender" value="2"> Feminino
+                        <input type="radio" name="gender" value="1" checked> Male
+                        <input type="radio" name="gender" value="2"> Female
                     </div>
 
 
@@ -66,19 +66,11 @@
                         <select name="selection">
 
                             <option value="" selected> Selection... </option>
-
                             <% selection.map((item)=> { %>
-
                                 <option value="<%= item.value %>">
                                     <%= item.label%>
                                 </option>
                                 <% }) %>
-
-
-                                    <!-- <option value="2"> Beatles </option>
-                                    <option value="3"> Queen </option>
-                                    <option value="4"> Stones </option>
-                                    <option value="5"> Strokes </option> -->
                         </select>
 
                     </div id="btn">

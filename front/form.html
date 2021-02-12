@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../front/public/css/style.css">
     <link rel="icon" type="imagem/png" href="./img/nav.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../front/public/css/style.css">
 
     <title>RockeRoll - Ticket</title>
 </head>
@@ -43,27 +43,28 @@
 
                     <div class="form_group">
                         <label for="name">Name:</label>
-                        <input type="text" name="name" placeholder="Insira o nome">
+                        <input type="text" name="name" placeholder="Your name" required autofocus>
                     </div>
 
                     <div class="form_group">
                         <label for="email">Email:</label>
-                        <input type="email" name="email" placeholder="Insira seu email">
+                        <input type="email" name="email" placeholder="Your email" required>
                     </div>
 
                     <div class="form_group">
                         <label for="age">Birth:</label>
-                        <input type="text" name="age" placeholder="Insira a sua idade">
+                        <input type="date" name="age" placeholder="Your birthday" min="1930-01-01" max="2020-12-31" required>
                     </div>
 
                     <div class="form_group gender">
                         <label for="">Gender:</label>
-                        <input type="radio" name="gender" value="1" checked> Masculino <br>
-                        <input type="radio" name="gender" value="2"> Feminino <br>
+                        <input type="radio" name="gender" value="1" checked> Male
+                        <input type="radio" name="gender" value="2"> Female
                     </div>
 
+
                     <div class="form_group section">
-                        <label for="zone_selection">Day(s)</label>
+                        <label for="zone_selection">Section: </label>
                         <select name="zone_selection">
                             <option value="1">Beatles</option>
                             <option value="1">Queen</option>

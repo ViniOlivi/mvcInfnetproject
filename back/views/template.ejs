@@ -4,18 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
+                sans-serif;
+            padding: 20px;
+            color: #d00;
+            text-align: center;
+        }
+
+        h2 {
+            text-transform: uppercase;
+        }
+
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 25px;
+            line-height: 50px;
+            color: #fec63e;
+        }
+
+
+        .top {
+            padding: 20px;
+            border: 1px solid #000;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .slice {
+            display: inline-table;
+            align-items: center;
+            width: 400px;
+            height: 100px;
+            padding: 10px;
+            margin: 20px 0px 20px 200px;
+            background: #000;
+            border-radius: 5px;
+            border: 1px solid #d00;
+        }
+
+        .slice .title {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            color: #d00;
+        }
+
+        main .data {
+            display: flex;
+            justify-content: space-around;
+            background-color: darkblue;
+        }
+
+        .cut {
+            margin-top: 10px;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px dashed #000;
+        }
+    </style>
 </head>
 
 <body>
 
     <main>
 
-        <h1> Congratulations! <br> <br>
-            Details about your TICKET below:
-        </h1>
-        <h3>Name:
+        <div class="top">
+            <h1> Congratulations!</h1>
+            <h2>Details about your TICKET below: </h2>
+        </div>
+
+
+        <div class="slice">
+            <div class="title">
+                <h2>
+                    <%= name %>
+                </h2>
+            </div>
+            <p><strong>email: </strong>
+                <%= email %>
+            </p>
+            <p><strong>Birth: </strong>
+                <%= birth %>
+            </p>
+
+            <p><strong>Gender: </strong>
+                <%= gender %>
+            </p>
+            <p><strong>Section: </strong>
+                <%= selection %>
+            </p>
+            <h1>Let's Rock! </h1>
+        </div>
+
+
+        <div class="cut">
+            <h4>cut here</h4>
+        </div>
+
+
+
+
+
+        <!-- <h2>Name:
             <%= name %>
-        </h3>
+        </h2>
         <h3>Email:
             <%= email %>
         </h3>
@@ -28,9 +129,9 @@
         </h3>
         <h3>Section:
             <%= selection %>
-        </h3>
+        </h3> -->
 
-    </main>
+        </>
 
 </body>
 

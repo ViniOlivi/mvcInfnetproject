@@ -4,13 +4,9 @@
   outline: none;
 }
 
-fa {
-  font-size: 30px;
+body .full_body {
+  height: 100vh;
 }
-
-/* body {
-  min-height: 100vh;
-} */
 
 a {
   color: inherit;
@@ -76,8 +72,7 @@ main {
   width: 0 auto;
   min-height: 466px;
   background-color: #0d0c0b; /*confirmar*/
-  display: auto;
-  flex: 1;
+  display: flex;
 }
 
 .main_form {
@@ -92,13 +87,13 @@ main {
   padding: 10px;
 }
 
-.banner img {
+/* .banner img {
   margin-left: 300px;
   display: flex;
   width: 600px;
   height: 400px;
   padding-top: 30px;
-}
+} */
 
 .form_generator {
   display: flex;
@@ -110,14 +105,24 @@ main {
   color: #d00000;
   text-align: center;
   margin-top: 60px;
-  font-size: 18px;
+  font-size: 16px;
+  font-style: italic;
   text-transform: uppercase;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #fec63e;
 }
 
+input[type="text"],
+[type="email"],
+[type="date"] {
+  width: 300px;
+  padding: 2px 5px;
+  margin: 10px 0px 2px 0px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
 .title {
-  text-align: start;
   font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
   padding-bottom: 30px;
@@ -126,13 +131,19 @@ main {
 
 /* space inside form*/
 .form_group {
-  padding: 10px;
+  padding: 5px;
   height: 30px;
-  text-align: start;
 }
 
 .gender {
-  font-size: 14px;
+  margin-top: 14px;
+  font-size: 16px;
+  padding: 5px;
+  text-align: left;
+}
+
+.section {
+  text-align: left;
 }
 
 main button {
@@ -149,7 +160,6 @@ main button {
   border-radius: 10px;
   font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
-  text-align: center;
 }
 
 main button:hover {

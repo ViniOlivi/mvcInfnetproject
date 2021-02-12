@@ -14,37 +14,32 @@ ul li {
 }
 
 body {
+  width: 100%;
   height: 100vh;
 }
 
-/* Header */
+/* Header-Menu */
 header {
-  width: 0 auto;
-  display: flex;
-  height: 80px;
-  background-color: #d00000;
-  padding: 10px;
-}
-
-.menu {
   width: 100%;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #d00000;
 }
 
-.logo {
-  margin-left: 100px;
-}
-
-.list_menu {
-  /* width: 200px; */
+header .logo {
   /* display: flex; */
-  margin-right: 100px;
-  padding: 20px;
+  margin-left: 110px;
+  padding-top: 5px;
 }
 
-/* menu button */
+header ul {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+
 .list_menu ul li {
   list-style-type: none;
   display: inline-block;
@@ -69,105 +64,42 @@ header {
 /* Main */
 
 main {
-  width: 0 auto;
-  min-height: 466px;
-  background-color: #0d0c0b; /*confirmar*/
-  display: auto;
+  display: flex;
+  width: 100%;
+  height: 78%;
+  flex-direction: flex;
   flex: 1;
+  background-image: url(../../img/tes.jpg);
+  justify-content: center;
+  align-items: center;
 }
 
-.main_form {
-  width: 0 auto;
-  min-height: 510px;
-  background-color: #000; /*confirmar*/
-  display: block;
-  background-image: url(../../img/img1.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 600px 400px;
-  padding: 10px;
-}
-
-.banner img {
-  margin-left: 300px;
+/* section {
   display: flex;
-  width: 600px;
-  height: 400px;
-  padding-top: 30px;
 }
-
-.form_generator {
+section .aside {
   display: flex;
-  justify-content: space-around;
-}
-
-/* escrita do form */
-.slice {
-  color: #d00000;
-  text-align: center;
-  margin-top: 60px;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #fec63e;
-}
-
-.title {
-  text-align: start;
-  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
-  padding-bottom: 30px;
-  font-size: 30px;
-}
-
-/* space inside form*/
-.form_group {
-  padding: 10px;
-  height: 30px;
-  text-align: start;
-}
-
-.gender {
-  font-size: 14px;
-}
-
-main button {
-  list-style-type: none;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 20px;
-  margin: 10px;
-  padding: 10px 20px;
-  border: none;
-  background-color: rgba(0, 0, 0, 0.925);
-  color: #fec63e;
-  text-transform: uppercase;
-  border-radius: 10px;
-  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
-  text-align: center;
-}
-
-main button:hover {
-  transition: 0.4s;
-  color: #ffffff;
-}
+  width: 50px;
+  height: 20px;
+  background-color: rgb(75, 61, 7);
+  padding: 20px;
+} */
 
 /* Footer */
+
 footer {
   width: 100%;
-  height: 40px;
+  height: 7%;
   display: flex;
   background-color: #d00000;
   justify-content: space-between;
-  position: absolute;
+  align-items: center;
 }
 
 .foot p {
   font-size: 14px;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-left: 107px;
-  padding: 10px;
 }
 
 .socials {
