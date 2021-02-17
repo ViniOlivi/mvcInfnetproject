@@ -4,7 +4,8 @@
   outline: none;
 }
 
-body .full_body {
+body {
+  /* width: 100vh; */
   height: 100vh;
 }
 
@@ -19,11 +20,11 @@ ul li {
 
 /* Header */
 header {
-  width: 0 auto;
+  width: 100%;
   display: flex;
-  height: 80px;
+  height: 100px;
   background-color: #d00000;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .menu {
@@ -31,10 +32,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
 
 .logo {
   margin-left: 100px;
+  padding: 10px;
 }
 
 .list_menu {
@@ -69,47 +72,99 @@ header {
 /* Main */
 
 main {
-  width: 0 auto;
-  min-height: 466px;
-  background-color: #0d0c0b; /*confirmar*/
+  width: 100%;
+  height: 700px;
   display: flex;
+  background: linear-gradient(to left bottom, #000, #2f3437);
+  background-color: #000;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
-.main_form {
-  width: 0 auto;
-  min-height: 510px;
-  background-color: #000; /*confirmar*/
-  display: block;
-  background-image: url(../../img/img1.jpeg);
-  background-repeat: no-repeat;
+.banner {
+  width: 100%;
+  height: 150px;
+  background-image: url(/img/bg/bandas.png);
+  background-size: cover;
   background-position: center;
-  background-size: 600px 400px;
-  padding: 10px;
+  margin-bottom: 50px;
+  position: absolute;
 }
 
-/* .banner img {
-  margin-left: 300px;
-  display: flex;
-  width: 600px;
-  height: 400px;
-  padding-top: 30px;
-} */
+.main_information {
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  /* background-color: #ffffff; */
+  background: transparent;
+  color: #fec63e;
+}
+
+.main_information h3 {
+  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    serif;
+  font-size: 30px;
+  padding: 30px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main_information p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+}
 
 .form_generator {
+  /* width: 400px; */
+  height: 400px;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  margin: 100px;
+  /* background-color: rgb(31, 34, 33); */
 }
 
 /* escrita do form */
 .slice {
-  color: #d00000;
+  width: 400px;
+  height: 400px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 100px;
   font-size: 16px;
   font-style: italic;
   text-transform: uppercase;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Roboto", sans-serif;
   color: #fec63e;
+  border: #fec63e solid 1px;
+  border-radius: 5px;
+  padding: 20px;
+  /* background-color: aquamarine; */
+  background: linear-gradient(
+    to right top,
+    rgba(15, 15, 15, 0.7),
+    rgba(58, 58, 60, 0.3)
+  );
+  z-index: 2;
+  backdrop-filter: blur(1rem);
+}
+
+.circle {
+  background-image: url(/img/main.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background: linear-gradient(
+    to right top,
+    rgba(248, 248, 248, 0.9),
+    rgba(58, 58, 60, 0.5)
+  ); */
+  height: 200px;
+  width: 200px;
+  top: 39%;
+  right: 4%;
+  position: absolute;
+  border-radius: 50%;
 }
 
 input[type="text"],
@@ -119,14 +174,23 @@ input[type="text"],
   padding: 2px 5px;
   margin: 10px 0px 2px 0px;
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid #fec63e;
+  background-color: transparent;
+  color: #fec63e99;
+}
+
+::placeholder {
+  color: #fec63e;
+  opacity: 0.5;
 }
 
 .title {
   font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
-  padding-bottom: 30px;
   font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 /* space inside form*/
@@ -139,11 +203,11 @@ input[type="text"],
   margin-top: 14px;
   font-size: 16px;
   padding: 5px;
-  text-align: left;
+  text-align: center;
 }
 
 .section {
-  text-align: left;
+  text-align: center;
 }
 
 main button {
@@ -154,7 +218,7 @@ main button {
   margin: 10px;
   padding: 10px 20px;
   border: none;
-  background-color: rgba(0, 0, 0, 0.925);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fec63e;
   text-transform: uppercase;
   border-radius: 10px;
@@ -174,13 +238,14 @@ footer {
   display: flex;
   background-color: #d00000;
   justify-content: space-between;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .foot p {
   font-size: 14px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  margin-left: 107px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin-left: 100px;
   padding: 10px;
 }
 

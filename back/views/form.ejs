@@ -31,7 +31,17 @@
 
     </header>
 
-    <main class="main_form">
+    <main>
+        <div class="banner">
+        </div>
+        <div class="circle"></div>
+        <div class="main_information">
+            <h3>Moonligth Festival</h3>
+            <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea minus ipsam dolore laudantium a aspernatur quasi laborum doloribus. Libero maxime alias obcaecati tempore deserunt itaque, accusamus eius ipsam eum nisi."</p>
+            <cite>Fulano de Tal</cite>
+        </div>
+
+
 
         <div class="form_generator">
             <form action="/form" method="POST">
@@ -40,17 +50,17 @@
                     <div class="title">buy your ticket </div>
 
                     <div class="form_group">
-                        <label for="name">Name:</label>
+                        <label for="name">Name: </label>
                         <input type="text" name="name" placeholder="Your name" required autofocus>
                     </div>
 
                     <div class="form_group">
-                        <label for="email">Email:</label>
+                        <label for="email">Email: </label>
                         <input type="email" name="email" placeholder="Your email" required>
                     </div>
 
                     <div class="form_group">
-                        <label for="age">Birth:</label>
+                        <label for="age">Birth: </label>
                         <input type="date" name="age" placeholder="Your date Of birth" min="1930-01-01" max="2020-12-31" required>
                     </div>
 
@@ -65,7 +75,7 @@
                         <label for="selection">Section: </label>
                         <select name="selection">
 
-                            <option value="" selected> Selection... </option>
+                            <option value="" selected> Section... </option>
                             <% selection.map((item)=> { %>
                                 <option value="<%= item.value %>">
                                     <%= item.label%>
@@ -73,9 +83,21 @@
                                 <% }) %>
                         </select>
 
-                    </div id="btn">
-                    <button type="submit">Let's Rock</button>
-                </div>
+                        <!-- New -->
+                        <div class="form_group section">
+                            <label for="location">Location: </label>
+                            <select name="location">
+                                <option value="" selected>Location...</option>
+                                <% location.map((item)=> { %>
+                                    <option value="<%= item.value %>">
+                                        <%= item.label%>
+                                    </option>
+                                    <%}) %>
+                            </select>
+
+                        </div id="btn">
+                        <button type="submit">Let's Rock</button>
+                    </div>
 
             </form>
 

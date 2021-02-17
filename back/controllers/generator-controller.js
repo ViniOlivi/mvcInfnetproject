@@ -4,6 +4,7 @@ const html_to_pdf = require("html-pdf-node");
 // Models Import
 const genderModel = require("../models/gender");
 const sectionModel = require("../models/sections");
+const locationModel = require("../models/location");
 
 // GET METHOD
 const handleGetForm = (req, res, next) => {
@@ -27,9 +28,21 @@ const handleGetForm = (req, res, next) => {
     };
   });
 
+  // Location
+
+  const locationResult = locationModel.getAllLocations();
+
+  const locationItemsViews = locationResult.map((item) => {
+    return {
+      value: item.id,
+      label: `${item.id} - ${item.description}`,
+    };
+  });
+
   const getViewModel = {
     gender: genderItemsViewModel,
     selection: sectionsItemsView,
+    location: locationItemsViews,
   };
   res.render("form", getViewModel);
 };
@@ -44,6 +57,7 @@ const handlePostForm = (req, res, next) => {
 
   const genderResult = genderModel.getGenderById(body.gender);
   const sectionResult = sectionModel.getSectionsById(body.selection);
+  const locationResult = locationModel.getLocationsById(body.location);
 
   const viewModel = {
     name: body.name,
@@ -51,6 +65,7 @@ const handlePostForm = (req, res, next) => {
     birth: body.age,
     gender: genderResult.description,
     selection: sectionResult.description,
+    location: locationResult.description,
   };
   // Template
 
