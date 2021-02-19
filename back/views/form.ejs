@@ -23,8 +23,8 @@
 
             <div class="list_menu">
                 <ul>
-                    <li><a href="./index">home</li>
-                    <li>ticket</a></li>
+                    <li><a href="./index">home</a></li>
+                    <li> <a href="./form" class="active">ticket</a> </li>
                     <li>about</li>
                 </ul>
             </div>
@@ -51,17 +51,17 @@
 
                     <div class="form_group">
                         <label for="name">Name: </label>
-                        <input type="text" name="name" placeholder="Your name" required autofocus>
+                        <input type="text" name="name" placeholder="Your name" autofocus>
                     </div>
 
                     <div class="form_group">
                         <label for="email">Email: </label>
-                        <input type="email" name="email" placeholder="Your email" required>
+                        <input type="email" name="email" placeholder="Your email">
                     </div>
 
                     <div class="form_group">
                         <label for="age">Birth: </label>
-                        <input type="date" name="age" placeholder="Your date Of birth" min="1930-01-01" max="2020-12-31" required>
+                        <input type="date" name="age" placeholder="Your date Of birth" min="1930-01-01" max="2020-12-31">
                     </div>
 
                     <div class="form_group gender">
@@ -70,21 +70,25 @@
                         <input type="radio" name="gender" value="2"> Female
                     </div>
 
+                    <div class="dinamic">
 
-                    <div class="form_group section">
-                        <label for="selection">Section: </label>
-                        <select name="selection">
+                        <div class="form_group section">
+                            <label for="selection">Section: </label>
+                            <select name="selection">
 
-                            <option value="" selected> Section... </option>
-                            <% selection.map((item)=> { %>
-                                <option value="<%= item.value %>">
-                                    <%= item.label%>
-                                </option>
-                                <% }) %>
-                        </select>
+
+                                <option value="" selected> Section... </option>
+                                <% selection.map((item)=> { %>
+                                    <option value="<%= item.value %>">
+                                        <%= item.label%>
+                                    </option>
+                                    <% }) %>
+                            </select>
+                        </div>
+
 
                         <!-- New -->
-                        <div class="form_group section">
+                        <div class="form_group location">
                             <label for="location">Location: </label>
                             <select name="location">
                                 <option value="" selected>Location...</option>
@@ -94,14 +98,20 @@
                                     </option>
                                     <%}) %>
                             </select>
+                        </div>
 
-                        </div id="btn">
+                    </div>
+
+
+                    <div class="btn">
                         <button type="submit">Let's Rock</button>
                     </div>
 
-            </form>
-
+                </div>
         </div>
+
+        </form>
+
     </main>
 
     <footer class="foot">

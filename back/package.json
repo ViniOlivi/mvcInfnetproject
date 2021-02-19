@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js, form.ejs"
+    "start": "nodemon index.js, form.ejs",
+    "sass": "sass --watch ./public/scss/style.scss ./public/css/style.css"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +23,8 @@
     "joi": "^17.4.0",
     "nodemon": "^2.0.7",
     "pipette": "^0.9.3"
+  },
+  "devDependencies": {
+    "sass": "^1.32.7"
   }
 }
