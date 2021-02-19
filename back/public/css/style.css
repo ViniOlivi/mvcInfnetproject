@@ -52,7 +52,8 @@ header ul {
   color: #fec63e;
   text-transform: uppercase;
   border-radius: 10px;
-  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
 }
 
 .list_menu ul li:hover {
@@ -96,7 +97,8 @@ main {
 }
 
 .main_information h3 {
-  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial, serif;
+  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    serif;
   font-size: 30px;
   padding: 30px;
   text-align: center;
@@ -124,14 +126,6 @@ main {
   background-image: url(/img/main.png);
   background-repeat: no-repeat;
   background-position: center;
-<<<<<<< HEAD
-  /* background: linear-gradient(
-      to right top,
-      rgba(248, 248, 248, 0.9),
-      rgba(58, 58, 60, 0.5)
-    ); */
-=======
->>>>>>> ae3f69397375167fa0ee74ebdd9d4f41f3f04af2
   height: 200px;
   width: 200px;
   top: 39%;
@@ -140,11 +134,7 @@ main {
   border-radius: 50%;
 }
 
-<<<<<<< HEAD
-/* escrita do form */
-=======
 /* form write */
->>>>>>> ae3f69397375167fa0ee74ebdd9d4f41f3f04af2
 .slice {
   width: 400px;
   height: 400px;
@@ -162,9 +152,9 @@ main {
   backdrop-filter: blur(1rem);
 }
 
-input[type=text],
-[type=email],
-[type=date] {
+input[type="text"],
+[type="email"],
+[type="date"] {
   width: 300px;
   padding: 2px 5px;
   margin: 10px 2px 5px 0px;
@@ -181,7 +171,8 @@ input[type=text],
 }
 
 .title {
-  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
   font-size: 30px;
   text-align: center;
   font-weight: 600;
@@ -214,7 +205,11 @@ input[type=text],
 }
 
 .dinamic select {
-  background: linear-gradient(to right top, rgba(15, 15, 15, 0.7), rgba(58, 58, 60, 0.3));
+  background: linear-gradient(
+    to right top,
+    rgba(15, 15, 15, 0.7),
+    rgba(58, 58, 60, 0.3)
+  );
   color: #fec63e;
   border-radius: 8px;
   font-size: 14px;
@@ -239,7 +234,8 @@ main button {
   color: #fec63e;
   text-transform: uppercase;
   border-radius: 10px;
-  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
 }
 
 main button:hover {
