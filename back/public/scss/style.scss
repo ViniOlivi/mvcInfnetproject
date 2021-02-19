@@ -57,13 +57,8 @@ header ul {
 }
 
 .list_menu ul li:hover {
-  transition: 0.2s;
-  color: #000;
-  background-color: #fec63e;
-}
-
-.active {
-  color: #fff;
+  transition: 0.4s;
+  color: #ffffff;
 }
 
 .active {
@@ -132,14 +127,6 @@ main {
   background-image: url(/img/main.png);
   background-repeat: no-repeat;
   background-position: center;
-<<<<<<< HEAD:back/public/scss/style.scss
-  /* background: linear-gradient(
-      to right top,
-      rgba(248, 248, 248, 0.9),
-      rgba(58, 58, 60, 0.5)
-    ); */
-=======
->>>>>>> ae3f69397375167fa0ee74ebdd9d4f41f3f04af2:front/public/css/style.css
   height: 200px;
   width: 200px;
   top: 39%;
@@ -147,12 +134,8 @@ main {
   position: absolute;
   border-radius: 50%;
 }
-<<<<<<< HEAD:back/public/scss/style.scss
-/* escrita do form */
-=======
 
 /* form write */
->>>>>>> ae3f69397375167fa0ee74ebdd9d4f41f3f04af2:front/public/css/style.css
 .slice {
   width: 400px;
   height: 400px;

@@ -1,19 +1,19 @@
 const data = [
   {
-    id: "1",
-    description: "Manchester-Uk - 24/06/2021",
+    id: "UK",
+    description: "Manchester - 24/06/21",
   },
   {
-    id: "2",
-    description: "London-UK - 24/07/2021",
+    id: "UK",
+    description: "London-UK - 24/07/21",
   },
   {
-    id: "3",
-    description: "Araraquara - 22/08/2021",
+    id: "BR",
+    description: "Araraquara - 22/08/21",
   },
   {
-    id: "4",
-    description: "Pescara - 21/09/2021",
+    id: "IT",
+    description: "Pescara - 21/09/21",
   },
 ];
 

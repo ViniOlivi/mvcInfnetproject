@@ -50,17 +50,17 @@
 
                     <div class="form_group">
                         <label for="name">Name: </label>
-                        <input type="text" name="name" placeholder="Your name" autofocus>
+                        <input type="text" name="name" placeholder="Your name" required autofocus>
                     </div>
 
                     <div class="form_group">
                         <label for="email">Email: </label>
-                        <input type="email" name="email" placeholder="Your email">
+                        <input type="email" name="email" placeholder="Your email" required>
                     </div>
 
                     <div class="form_group">
                         <label for="age">Birth: </label>
-                        <input type="date" name="age" placeholder="Your date Of birth" min="1930-01-01" max="2020-12-31">
+                        <input type="date" name="age" placeholder="Your date Of birth" min="1930-01-01" max="2020-12-31" required>
                     </div>
 
                     <div class="form_group gender">
@@ -88,9 +88,9 @@
 
                         <!-- New -->
                         <div class="form_group location">
-                            <label for="location">Location: </label>
+                            <label for="location">City: </label>
                             <select name="location">
-                                <option value="" selected>Location...</option>
+                                <option value="" selected>City...</option>
                                 <% location.map((item)=> { %>
                                     <option value="<%= item.value %>">
                                         <%= item.label%>
