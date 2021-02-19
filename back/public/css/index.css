@@ -61,19 +61,31 @@ header ul {
   color: #ffffff;
 }
 
+.active {
+  color: #fff;
+}
+
 /* Main */
 
 main {
-  display: flex;
   width: 100%;
+<<<<<<< HEAD
   height: 800px;
   background: linear-gradient(to left bottom, rgb(8, 8, 8), #586369);
   background-color: #000;
+=======
+  height: 900px;
+  display: column;
+  background: linear-gradient(to left bottom, rgb(8, 8, 8), #586369);
+  justify-content: center;
+  align-items: center;
+>>>>>>> ae3f69397375167fa0ee74ebdd9d4f41f3f04af2
 }
 
 .banner {
   width: 100%;
   height: 150px;
+<<<<<<< HEAD
   display: flex;
   background-image: url(/img/bg/bandas.png);
   background-size: cover;
@@ -85,16 +97,56 @@ main {
 .home_cite {
   display: flex;
 }
+=======
+  background-image: url(/img/bg/bandas.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
+  display: block;
+  /* position: absolute; */
+}
+
+.main_information {
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  margin: 40px;
+  /* background-color: #ffffff; */
+  background: transparent;
+  color: #fec63e;
+}
+
+.main_information h3 {
+  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    serif;
+  font-size: 30px;
+  padding: 30px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main_information p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+}
+
+
+>>>>>>> ae3f69397375167fa0ee74ebdd9d4f41f3f04af2
 
 .circle {
   background-image: url(/img/main.png);
   background-repeat: no-repeat;
   background-position: center;
+<<<<<<< HEAD
   /* background: linear-gradient(
     to right top,
     rgba(248, 248, 248, 0.9),
     rgba(58, 58, 60, 0.5)
   ); */
+=======
+>>>>>>> ae3f69397375167fa0ee74ebdd9d4f41f3f04af2
   height: 100px;
   width: 100px;
   top: 50%;
@@ -102,22 +154,45 @@ main {
   position: absolute;
   border-radius: 50%;
 }
+<<<<<<< HEAD
+=======
+
+
+.radio {
+  text-align: left;
+  margin: 50px 0px 0px 100px;
+ color: #fec63e;
+}
+
+.radio_cite {
+  display: column;
+  align-items:center;
+  justify-content: space-around;
+}
+
+.video {
+  margin: 50px;
+}
+
+>>>>>>> ae3f69397375167fa0ee74ebdd9d4f41f3f04af2
 
 /* Footer */
 
 footer {
   width: 100%;
-  height: 7%;
+  height: 40px;
   display: flex;
   background-color: #d00000;
   justify-content: space-between;
-  align-items: center;
+  /* position: absolute; */
 }
 
 .foot p {
   font-size: 14px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  margin-left: 107px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin-left: 100px;
+  padding: 10px;
 }
 
 .socials {
@@ -127,5 +202,5 @@ footer {
 }
 
 footer ul li {
-  padding: 0px 10px 0px 10px;
+  padding: 0px 10px;
 }
