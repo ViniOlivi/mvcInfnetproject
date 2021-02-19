@@ -52,7 +52,8 @@ header ul {
   color: #fec63e;
   text-transform: uppercase;
   border-radius: 10px;
-  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
 }
 
 .list_menu ul li:hover {
@@ -65,11 +66,12 @@ header ul {
 }
 
 /* Main */
+
 main {
   width: 100%;
   height: 700px;
   display: flex;
-  background: linear-gradient(to left bottom, #080808, #586369);
+  background: linear-gradient(to left bottom, rgb(8, 8, 8), #586369);
   justify-content: space-around;
   align-items: baseline;
 }
@@ -95,7 +97,8 @@ main {
 }
 
 .main_information h3 {
-  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial, serif;
+  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    serif;
   font-size: 30px;
   padding: 30px;
   text-align: center;
@@ -119,6 +122,7 @@ main {
   /* background-color: rgb(31, 34, 33); */
 }
 
+// moon
 .circle {
   background-image: url(/img/main.png);
   background-repeat: no-repeat;
@@ -138,6 +142,7 @@ main {
   text-align: center;
   margin-top: 100px;
   font-size: 16px;
+  //   font-style: italic;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   color: #fec63e;
@@ -145,13 +150,14 @@ main {
   border-radius: 5px;
   padding: 20px;
   background: linear-gradient(to left bottom, rgba(20, 20, 20, 0.774), #3c4347);
+
   z-index: 2;
   backdrop-filter: blur(1rem);
 }
 
-input[type=text],
-[type=email],
-[type=date] {
+input[type="text"],
+[type="email"],
+[type="date"] {
   width: 300px;
   padding: 2px 5px;
   margin: 10px 2px 5px 0px;
@@ -168,7 +174,8 @@ input[type=text],
 }
 
 .title {
-  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
   font-size: 30px;
   text-align: center;
   font-weight: 600;
@@ -201,7 +208,11 @@ input[type=text],
 }
 
 .dinamic select {
-  background: linear-gradient(to right top, rgba(15, 15, 15, 0.7), rgba(58, 58, 60, 0.3));
+  background: linear-gradient(
+    to right top,
+    rgba(15, 15, 15, 0.7),
+    rgba(58, 58, 60, 0.3)
+  );
   color: #fec63e;
   border-radius: 8px;
   font-size: 14px;
@@ -226,7 +237,8 @@ main button {
   color: #fec63e;
   text-transform: uppercase;
   border-radius: 10px;
-  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
 }
 
 main button:hover {
@@ -262,5 +274,3 @@ footer {
 footer ul li {
   padding: 0px 10px;
 }
-
-/*# sourceMappingURL=style.css.map */

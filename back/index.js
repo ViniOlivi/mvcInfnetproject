@@ -16,7 +16,7 @@ const handleRaiz = (req, res, next) => {
 };
 
 // Routes
-app.get("/", handleRaiz);
+app.get("/index", handleRaiz);
 app.get("/form", generatorController.get); //envia algo, expor uma url para acesso
 app.post("/form", generatorController.post); //recebe algo, acessar uma url para acesso
 

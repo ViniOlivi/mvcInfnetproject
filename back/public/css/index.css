@@ -61,45 +61,107 @@ header ul {
   color: #ffffff;
 }
 
+.active {
+  color: #fff;
+}
+
 /* Main */
 
 main {
-  display: flex;
   width: 100%;
-  height: 78%;
-  flex-direction: flex;
-  flex: 1;
-  background-image: url(../../img/tes.jpg);
+  height: 900px;
+  display: column;
+  background: linear-gradient(to left bottom, rgb(8, 8, 8), #586369);
   justify-content: center;
   align-items: center;
 }
 
-/* section {
-  display: flex;
+.banner {
+  width: 100%;
+  height: 150px;
+  background-image: url(/img/bg/bandas.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
+  display: block;
+  /* position: absolute; */
 }
-section .aside {
-  display: flex;
-  width: 50px;
-  height: 20px;
-  background-color: rgb(75, 61, 7);
-  padding: 20px;
-} */
+
+.main_information {
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  margin: 40px;
+  /* background-color: #ffffff; */
+  background: transparent;
+  color: #fec63e;
+}
+
+.main_information h3 {
+  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    serif;
+  font-size: 30px;
+  padding: 30px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main_information p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+}
+
+
+
+.circle {
+  background-image: url(/img/main.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  right: 8%;
+  position: absolute;
+  border-radius: 50%;
+}
+
+
+.radio {
+  text-align: left;
+  margin: 50px 0px 0px 100px;
+ color: #fec63e;
+}
+
+.radio_cite {
+  display: column;
+  align-items:center;
+  justify-content: space-around;
+}
+
+.video {
+  margin: 50px;
+}
+
 
 /* Footer */
 
 footer {
   width: 100%;
-  height: 7%;
+  height: 40px;
   display: flex;
   background-color: #d00000;
   justify-content: space-between;
-  align-items: center;
+  /* position: absolute; */
 }
 
 .foot p {
   font-size: 14px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  margin-left: 107px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin-left: 100px;
+  padding: 10px;
 }
 
 .socials {
@@ -109,5 +171,5 @@ footer {
 }
 
 footer ul li {
-  padding: 0px 10px 0px 10px;
+  padding: 0px 10px;
 }

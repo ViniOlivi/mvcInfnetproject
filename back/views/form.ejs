@@ -17,17 +17,16 @@
 <body>
 
     <header>
-        <div class="menu">
-            <div class="logo"><a href="./index.ejs"><img src="./img/logo9.svg" alt="logo RockeRoll"></a>
-            </div>
-
-            <div class="list_menu">
-                <ul>
-                    <li><a href="./index">home</li>
-                    <li>ticket</a></li>
-                    <li>about</li>
-                </ul>
-            </div>
+        <div class="logo"><a href="./index"><img src="./img/logo9.svg" alt="logo RockeRoll"></a>
+        </div>
+        
+        <div class="list_menu">
+            <ul>
+                <li> <a href="./index" >home</a> </li>
+                <li><a href="./form" class="active">ticket</a></li>
+                <li>about</li>
+            </ul>
+        </div>
 
     </header>
 
@@ -70,21 +69,25 @@
                         <input type="radio" name="gender" value="2"> Female
                     </div>
 
+                    <div class="dinamic">
 
-                    <div class="form_group section">
-                        <label for="selection">Section: </label>
-                        <select name="selection">
+                        <div class="form_group section">
+                            <label for="selection">Section: </label>
+                            <select name="selection">
 
-                            <option value="" selected> Section... </option>
-                            <% selection.map((item)=> { %>
-                                <option value="<%= item.value %>">
-                                    <%= item.label%>
-                                </option>
-                                <% }) %>
-                        </select>
+
+                                <option value="" selected> Section... </option>
+                                <% selection.map((item)=> { %>
+                                    <option value="<%= item.value %>">
+                                        <%= item.label%>
+                                    </option>
+                                    <% }) %>
+                            </select>
+                        </div>
+
 
                         <!-- New -->
-                        <div class="form_group section">
+                        <div class="form_group location">
                             <label for="location">Location: </label>
                             <select name="location">
                                 <option value="" selected>Location...</option>
@@ -94,14 +97,20 @@
                                     </option>
                                     <%}) %>
                             </select>
+                        </div>
 
-                        </div id="btn">
+                    </div>
+
+
+                    <div class="btn">
                         <button type="submit">Let's Rock</button>
                     </div>
 
-            </form>
-
+                </div>
         </div>
+
+        </form>
+
     </main>
 
     <footer class="foot">
