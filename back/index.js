@@ -36,8 +36,14 @@ const handleRaiz = (req, res, next) => {
 
 // Routes
 app.get("/index", handleRaiz);
+
+app.get("/about", function (req, res) {
+  res.render("about");
+});
+
 app.get("/form", generatorController.get); //envia algo, expor uma url para acesso
 
+// Post
 app.post("/form", generatorController.post); //recebe algo, acessar uma url para acesso ,validate,
 
 //call server
