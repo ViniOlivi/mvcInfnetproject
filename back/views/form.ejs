@@ -22,7 +22,7 @@
 
         <div class="list_menu">
             <ul>
-                <li> <a href="./index">home</a> </li>
+                <li> <a href="./">home</a> </li>
                 <li><a href="./form" class="active">ticket</a></li>
                 <li><a href="./about">about</a></li>
 
@@ -36,83 +36,82 @@
             <img src="/img/bg/bandas.png" alt="">
         </div>
         <div class="circle"></div>
-        <div class="main_information">
-            <h3>Moonligth Festival</h3>
-            <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea minus ipsam dolore laudantium a aspernatur quasi laborum doloribus. Libero maxime alias obcaecati tempore deserunt itaque, accusamus eius ipsam eum nisi."</p>
-            <cite>Fulano de Tal</cite>
-        </div>
+        <div class="main_down">
+            <div class="main_information">
+                <h3>Moonligth Festival</h3>
+                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea minus ipsam dolore laudantium a aspernatur quasi laborum doloribus. Libero maxime alias obcaecati tempore deserunt itaque, accusamus eius ipsam eum nisi."</p>
+                <cite>Fulano de Tal</cite>
+            </div>
+
+            <div class="form_generator">
+                <form action="/form" method="POST">
+
+                    <div class="slice">
+                        <div class="title">buy your ticket </div>
+
+                        <div class="form_group">
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" placeholder="Your name" required autofocus>
+                        </div>
+
+                        <div class="form_group">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" placeholder="Your email" required>
+                        </div>
+
+                        <div class="form_group">
+                            <label for="age">Birth: </label>
+                            <input type="date" name="age" placeholder="Your date Of birth" min="1930-01-01" max="2020-12-31" required>
+                        </div>
+
+                        <div class="form_group gender">
+                            <label for="">Gender:</label>
+                            <input type="radio" name="gender" value="1" checked> Male
+                            <input type="radio" name="gender" value="2"> Female
+                        </div>
+
+                        <div class="dinamic">
+
+                            <div class="form_group section">
+                                <label for="selection">Section: </label>
+                                <select name="selection">
 
 
-
-        <div class="form_generator">
-            <form action="/form" method="POST">
-
-                <div class="slice">
-                    <div class="title">buy your ticket </div>
-
-                    <div class="form_group">
-                        <label for="name">Name: </label>
-                        <input type="text" name="name" placeholder="Your name" required autofocus>
-                    </div>
-
-                    <div class="form_group">
-                        <label for="email">Email: </label>
-                        <input type="email" name="email" placeholder="Your email" required>
-                    </div>
-
-                    <div class="form_group">
-                        <label for="age">Birth: </label>
-                        <input type="date" name="age" placeholder="Your date Of birth" min="1930-01-01" max="2020-12-31" required>
-                    </div>
-
-                    <div class="form_group gender">
-                        <label for="">Gender:</label>
-                        <input type="radio" name="gender" value="1" checked> Male
-                        <input type="radio" name="gender" value="2"> Female
-                    </div>
-
-                    <div class="dinamic">
-
-                        <div class="form_group section">
-                            <label for="selection">Section: </label>
-                            <select name="selection">
+                                    <option value="" selected> Section... </option>
+                                    <% selection.map((item)=> { %>
+                                        <option value="<%= item.value %>">
+                                            <%= item.label%>
+                                        </option>
+                                        <% }) %>
+                                </select>
+                            </div>
 
 
-                                <option value="" selected> Section... </option>
-                                <% selection.map((item)=> { %>
-                                    <option value="<%= item.value %>">
-                                        <%= item.label%>
-                                    </option>
-                                    <% }) %>
-                            </select>
+                            <!-- New -->
+                            <div class="form_group location">
+                                <label for="location">City: </label>
+                                <select name="location">
+                                    <option value="" selected>City...</option>
+                                    <% location.map((item)=> { %>
+                                        <option value="<%= item.value %>">
+                                            <%= item.label%>
+                                        </option>
+                                        <%}) %>
+                                </select>
+                            </div>
+
                         </div>
 
 
-                        <!-- New -->
-                        <div class="form_group location">
-                            <label for="location">City: </label>
-                            <select name="location">
-                                <option value="" selected>City...</option>
-                                <% location.map((item)=> { %>
-                                    <option value="<%= item.value %>">
-                                        <%= item.label%>
-                                    </option>
-                                    <%}) %>
-                            </select>
+                        <div class="btn">
+                            <button type="submit">Let's Rock</button>
                         </div>
 
                     </div>
+            </div>
 
-
-                    <div class="btn">
-                        <button type="submit">Let's Rock</button>
-                    </div>
-
-                </div>
+            </form>
         </div>
-
-        </form>
-
     </main>
 
     <footer class="foot">

@@ -4,7 +4,7 @@ const data = [
     description: "Manchester - 24/06/21",
   },
   {
-    id: "UK",
+    id: "EU",
     description: "London-UK - 24/07/21",
   },
   {

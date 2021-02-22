@@ -35,7 +35,7 @@ const handleRaiz = (req, res, next) => {
 };
 
 // Routes
-app.get("/index", handleRaiz);
+app.get("/", handleRaiz);
 
 app.get("/about", function (req, res) {
   res.render("about");
