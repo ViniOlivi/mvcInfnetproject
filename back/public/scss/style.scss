@@ -120,35 +120,22 @@ main .banner img {
 .boxes {
   display: flex;
   margin-left: 40px;
-  // align-items: left;
   justify-content: space-between;
 }
 
 .main_content .box1 {
   width: 100px;
   height: 100px;
-  // background-color: #fec63e;
-  // margin: 10px 10px 0px 0px;
 }
 .main_content .box2 {
   width: 100px;
   height: 100px;
-  // background-color: #857656;
-  // margin: -10px 10px 0px 0px;
 }
 .main_content .box3 {
   width: 100px;
   height: 100px;
-  // background-color: #0a0a0a;
   margin-right: 10px;
 }
-// .main_content .box4 {
-//   width: 100px;
-//   height: 140px;
-//   background-color: #d41010;
-//   // margin: 0px 0px 30px;
-//   // padding-bottom: 20px;
-// }
 
 .form_generator {
   /* width: 400px; */
@@ -336,9 +323,9 @@ footer ul li {
 
 /* Responsivo Tablet */
 /* Header */
-@media only screen and (min-width: 788px) and (max-width: 979px) {
+@media only screen and (min-width: 788px) and (max-width: 1367px) {
   header {
-    background-color: #d00000;
+    background-color: #e1d3d3;
     justify-content: space-around;
     align-items: center;
   }
@@ -353,13 +340,22 @@ footer ul li {
 
   /* Main */
 
-  .moon {
-    height: 100px;
-    position: relative;
+  main {
+    height: 110%;
+  }
+  .form_generator {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
   }
 
-  .radio {
-    display: block;
+  .circle {
+    top: 40%;
+    right: 1%;
+    // height: 100px;
   }
 }
 
@@ -412,12 +408,15 @@ footer ul li {
   }
 
   .main_information {
-    margin: 0 auto;
     display: none;
   }
 
   .form_generator {
-    margin: 0 auto;
+    margin: 20px;
+  }
+
+  .boxes {
+    display: none;
   }
 
   // Footer
@@ -438,43 +437,6 @@ footer ul li {
 }
 
 /* JAVASCRIPT */
-.js [data-slide] {
-  position: relative;
-}
-.js [data-slide] > * {
-  position: absolute;
-  top: 0px;
-  opacity: 0;
-}
-.js [data-slide] > .active {
-  position: relative;
-  opacity: 1;
-  transition: opacity 500ms;
-  z-index: 1;
-}
-
-.js [data-slide-nav] {
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.js [data-slide-nav] button {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin: 4px;
-  border: none;
-  padding: 0px;
-  border-radius: 6px;
-  text-indent: -99px;
-  overflow: hidden;
-  background: #1d1d1d;
-}
-
-.js [data-slide-nav] button.active {
-  background: #fec63e;
-}
 
 .js [data-anime] {
   opacity: 0;
@@ -489,18 +451,4 @@ footer ul li {
   opacity: 1;
   transform: none;
   transition: opacity 800ms, transform 800ms;
-}
-
-.nao-aparece {
-  visibility: hidden;
-  position: absolute;
-  height: 0px;
-}
-
-#form-sucesso {
-  color: #31aa39;
-}
-
-#form-erro {
-  color: #f64540;
 }

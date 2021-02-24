@@ -53,6 +53,10 @@ header ul {
     sans-serif;
 }
 
+#btn1 {
+  padding: 20px;
+}
+
 .list_menu ul li:hover {
   transition: 0.4s;
   color: #ffffff;
@@ -180,9 +184,9 @@ footer ul li {
   padding: 0px 10px;
 }
 
-/* Responsivo Tablet */
-/* Header */
-@media only screen and (min-width: 788px) and (max-width: 979px) {
+/* Laptop */
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
   header {
     background-color: #d00000;
     justify-content: space-around;
@@ -199,19 +203,71 @@ footer ul li {
 
   /* Main */
 
-  .moon {
-    height: 100px;
-    position: relative;
+  main {
+    height: 110%;
+  }
+  .main_information {
+    height: 200px;
+    padding: 30px;
+    margin: 0px 0px 10px 50px;
   }
 
   .radio {
-    display: block;
+    margin-top: 60px;
+  }
+
+  .boxes {
+    margin: 60px 0px 0px 50px;
+  }
+}
+
+/* Responsivo Tablet */
+/* Header */
+@media only screen and (min-width: 878px) and (max-width: 1199px) {
+  header {
+    background-color: #d00000;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header .logo {
+    margin-left: 20px;
+  }
+
+  .list_menu ul li {
+    text-align: center;
+  }
+
+  /* Main */
+
+  main {
+    height: 110%;
+  }
+  .main_information {
+    height: 200px;
+    padding: 30px;
+    margin: 0px 0px 10px 50px;
+  }
+
+  .circle {
+    top: 40%;
+    right: 6%;
+    width: 120px;
+    height: 120px;
+  }
+
+  .radio {
+    margin-top: 60px;
+  }
+
+  .boxes {
+    display: none;
   }
 }
 
 /* Smartphone */
 
-@media only screen and (max-width: 787px) {
+@media only screen and (max-width: 877px) {
   header {
     display: flex;
     width: 100%;
@@ -289,6 +345,10 @@ footer ul li {
     /* display: none; */
   }
 
+  .boxes {
+    display: none;
+  }
+
   /* Footer */
   footer {
     justify-content: space-between;
@@ -307,43 +367,6 @@ footer ul li {
 }
 
 /* JAVASCRIPT */
-.js [data-slide] {
-  position: relative;
-}
-.js [data-slide] > * {
-  position: absolute;
-  top: 0px;
-  opacity: 0;
-}
-.js [data-slide] > .active {
-  position: relative;
-  opacity: 1;
-  transition: opacity 500ms;
-  z-index: 1;
-}
-
-.js [data-slide-nav] {
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.js [data-slide-nav] button {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin: 4px;
-  border: none;
-  padding: 0px;
-  border-radius: 6px;
-  text-indent: -99px;
-  overflow: hidden;
-  background: #1d1d1d;
-}
-
-.js [data-slide-nav] button.active {
-  background: #fec63e;
-}
 
 .js [data-anime] {
   opacity: 0;
@@ -358,18 +381,4 @@ footer ul li {
   opacity: 1;
   transform: none;
   transition: opacity 800ms, transform 800ms;
-}
-
-.nao-aparece {
-  visibility: hidden;
-  position: absolute;
-  height: 0px;
-}
-
-#form-sucesso {
-  color: #31aa39;
-}
-
-#form-erro {
-  color: #f64540;
 }
