@@ -62,6 +62,8 @@ header ul {
   color: #fff;
 }
 
+/* Main */
+
 main {
   width: 100%;
   height: 90%;
@@ -82,27 +84,6 @@ main .banner img {
   align-items: center;
   justify-content: space-around;
 }
-/* Main */
-
-// main {
-//   width: 100%;
-//   height: 90%;
-//   display: flex;
-//   background: linear-gradient(to left bottom, rgb(8, 8, 8), #586369);
-//   justify-content: space-around;
-//   align-items: baseline;
-// }
-
-// .banner {
-//   width: 100%;
-//   height: 210px;
-//   background-image: url(/img/bg/bandas.png);
-//   background-size: cover;
-//   background-position: center;
-//   margin-bottom: 50px;
-//   position: absolute;
-//   // overflow: hidden;
-// }
 
 .main_information {
   width: 400px;
@@ -129,6 +110,45 @@ main .banner img {
   font-family: "Roboto", sans-serif;
   line-height: 25px;
 }
+
+.main_content {
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxes {
+  display: flex;
+  margin-left: 40px;
+  // align-items: left;
+  justify-content: space-between;
+}
+
+.main_content .box1 {
+  width: 100px;
+  height: 100px;
+  // background-color: #fec63e;
+  // margin: 10px 10px 0px 0px;
+}
+.main_content .box2 {
+  width: 100px;
+  height: 100px;
+  // background-color: #857656;
+  // margin: -10px 10px 0px 0px;
+}
+.main_content .box3 {
+  width: 100px;
+  height: 100px;
+  // background-color: #0a0a0a;
+  margin-right: 10px;
+}
+// .main_content .box4 {
+//   width: 100px;
+//   height: 140px;
+//   background-color: #d41010;
+//   // margin: 0px 0px 30px;
+//   // padding-bottom: 20px;
+// }
 
 .form_generator {
   /* width: 400px; */
@@ -221,7 +241,7 @@ input[type="radio"]:after {
   height: 10px;
   border-radius: 10px;
   position: relative;
-  background-color: #d1d3d1;
+  background-color: #fff;
   content: "";
   display: inline-block;
   visibility: visible;
@@ -415,4 +435,72 @@ footer ul li {
     margin-left: 0px;
     padding: 0px 25px;
   }
+}
+
+/* JAVASCRIPT */
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+  z-index: 1;
+}
+
+.js [data-slide-nav] {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.js [data-slide-nav] button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  text-indent: -99px;
+  overflow: hidden;
+  background: #1d1d1d;
+}
+
+.js [data-slide-nav] button.active {
+  background: #fec63e;
+}
+
+.js [data-anime] {
+  opacity: 0;
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
+}
+
+.nao-aparece {
+  visibility: hidden;
+  position: absolute;
+  height: 0px;
+}
+
+#form-sucesso {
+  color: #31aa39;
+}
+
+#form-erro {
+  color: #f64540;
 }

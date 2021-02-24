@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js, form.ejs",
-    "sass": "sass --watch ./public/scss/style.scss ./public/css/style.css"
+    "sass": "sass --watch ./public/scss/style.scss ./public/css/style.css",
+    "dev": "nodemon --watch ."
   },
   "keywords": [],
   "author": "",

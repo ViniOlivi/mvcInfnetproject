@@ -127,6 +127,30 @@ main .banner img {
   margin-left: 116px;
 }
 
+.box_radio {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.boxes {
+  display: flex;
+  margin-left: 40px;
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+}
+.box3 {
+  width: 100px;
+  height: 100px;
+}
+
 /* Footer */
 
 footer {
@@ -280,4 +304,72 @@ footer ul li {
     margin-left: 0px;
     padding: 0px 25px;
   }
+}
+
+/* JAVASCRIPT */
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+  z-index: 1;
+}
+
+.js [data-slide-nav] {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.js [data-slide-nav] button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  text-indent: -99px;
+  overflow: hidden;
+  background: #1d1d1d;
+}
+
+.js [data-slide-nav] button.active {
+  background: #fec63e;
+}
+
+.js [data-anime] {
+  opacity: 0;
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
+}
+
+.nao-aparece {
+  visibility: hidden;
+  position: absolute;
+  height: 0px;
+}
+
+#form-sucesso {
+  color: #31aa39;
+}
+
+#form-erro {
+  color: #f64540;
 }

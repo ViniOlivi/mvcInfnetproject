@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <title>RockeRoll - Ticket</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
@@ -10,14 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add("js")</script>
 
-    <title>RockeRoll - Ticket</title>
 </head>
 
 <body>
 
     <header>
-        <div class="logo"><a href="./index"><img src="./img/logo9.svg" alt="logo RockeRoll"></a>
+        <div class="logo"><a href="./"><img src="./img/logo9.svg" alt="logo RockeRoll"></a>
         </div>
 
         <div class="list_menu">
@@ -32,15 +33,24 @@
     </header>
 
     <main>
-        <div class="banner">
+        <div data-anime="400" class="banner fadeInDown">
             <img src="/img/bg/bandas.png" alt="">
         </div>
         <div class="circle"></div>
         <div class="main_down">
-            <div class="main_information">
-                <h3>Moonligth Festival</h3>
-                <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea minus ipsam dolore laudantium a aspernatur quasi laborum doloribus. Libero maxime alias obcaecati tempore deserunt itaque, accusamus eius ipsam eum nisi."</p>
-                <cite>Fulano de Tal</cite>
+
+            <div class="main_content">
+                <div class="main_information">
+                    <h3 data-anime="800" class="fadeInDown">Moonligth Festival</h3>
+                    <p data-anime="1200" class="fadeInDown">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea minus ipsam dolore laudantium a aspernatur quasi laborum doloribus. Libero maxime alias obcaecati tempore deserunt itaque, accusamus eius ipsam eum nisi."</p>
+                    <cite data-anime="1200" class="fadeInDown">Fulano de Tal</cite>
+                </div>
+                <div data-anime="1800" class="boxes fadeInDown">
+                    <div class="box1"> <img src="/img/box/rocker1.svg" alt=""> </div>
+                    <div class="box2"><img src="/img/box/rocker2.svg" alt=""></div>
+                    <div class="box3"><img src="/img/box/rocker3.svg" alt=""></div>
+                </div>
+
             </div>
 
             <div class="form_generator">
@@ -123,6 +133,8 @@
 
         </ul>
     </footer>
+    <script src="/js/simple-anime.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
