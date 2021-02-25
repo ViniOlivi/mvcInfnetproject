@@ -66,7 +66,7 @@ header ul {
 
 main {
   width: 100%;
-  height: 90%;
+  height: 100%;
   // display: flex;
   background: linear-gradient(to left bottom, rgb(8, 8, 8), #586369);
   justify-content: center;
@@ -106,15 +106,20 @@ main .banner img {
 }
 
 .main_information p {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
   line-height: 25px;
+}
+
+.john {
+  margin-bottom: 20px;
 }
 
 .main_content {
   width: 400px;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .boxes {
@@ -154,7 +159,7 @@ main .banner img {
   background-position: center;
   height: 200px;
   width: 200px;
-  top: 32%;
+  top: 35%;
   right: 7%;
   position: absolute;
   border-radius: 50%;
@@ -321,11 +326,34 @@ footer ul li {
   padding: 0px 10px;
 }
 
+/* Laptop */
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  header {
+    background-color: #d00000;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header .logo {
+    margin-left: 20px;
+  }
+
+  .circle {
+    right: 5%;
+    top: 38%;
+  }
+
+  .list_menu ul li {
+    text-align: center;
+  }
+}
+
 /* Responsivo Tablet */
 /* Header */
-@media only screen and (min-width: 788px) and (max-width: 1367px) {
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
   header {
-    background-color: #e1d3d3;
+    background-color: #d00000;
     justify-content: space-around;
     align-items: center;
   }
@@ -341,7 +369,31 @@ footer ul li {
   /* Main */
 
   main {
-    height: 110%;
+    height: 100%;
+  }
+  .main_down {
+    justify-content: center;
+  }
+
+  .main_information {
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    margin-left: 50px;
+    /* background-color: #ffffff; */
+    background: transparent;
+    color: #fec63e;
+  }
+
+  .main_information h3 {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  .main_information p {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    line-height: 25px;
   }
   .form_generator {
     width: 400px;
@@ -353,15 +405,15 @@ footer ul li {
   }
 
   .circle {
-    top: 40%;
-    right: 1%;
+    top: 35%;
+    right: 0%;
     // height: 100px;
   }
 }
 
 /* Smartphone */
 
-@media only screen and (max-width: 787px) {
+@media only screen and (max-width: 899px) {
   // Header
   header {
     display: flex;
@@ -411,8 +463,18 @@ footer ul li {
     display: none;
   }
 
+  .main_down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main_content {
+    display: none;
+  }
+
   .form_generator {
-    margin: 20px;
+    // margin: 40px;
   }
 
   .boxes {

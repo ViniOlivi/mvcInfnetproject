@@ -70,7 +70,7 @@ header ul {
 
 main {
   width: 100%;
-  height: 90%;
+  height: 100%;
   display: column;
   background: linear-gradient(to left bottom, rgb(8, 8, 8), #586369);
   justify-content: center;
@@ -81,12 +81,12 @@ main .banner img {
   width: 100%;
 }
 
+/* left content */
 .main_information {
-  width: 600px;
+  width: 400px;
   height: 300px;
   padding: 10px;
-  margin: 50px 0px 20px 103px;
-  background: transparent;
+  margin: 80px 0px 20px 103px;
   color: #fec63e;
 }
 
@@ -95,17 +95,46 @@ main .banner img {
   font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
     serif;
   font-size: 30px;
-  padding: 30px;
   text-align: center;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.welcome {
+  margin-bottom: 50px;
 }
 
 .main_information p {
   width: 100%;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Roboto", sans-serif;
   line-height: 25px;
+  text-align: justify;
+}
+
+.main_about {
+  width: 800px;
+  height: 500px;
+  padding: 10px;
+  margin: 100px 0px 20px 103px;
+  color: #fec63e;
+}
+
+.main_about h3 {
+  width: 100%;
+  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    serif;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.main_about p {
+  width: 100%;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
 }
 
 .circle {
@@ -125,10 +154,11 @@ main .banner img {
   display: column;
   width: 400px;
   height: 300px;
+  margin-left: 50px;
 }
 
 .radio {
-  margin-left: 116px;
+  margin-left: 166px;
 }
 
 .box_radio {
@@ -139,7 +169,7 @@ main .banner img {
 }
 .boxes {
   display: flex;
-  margin-left: 40px;
+  margin-left: 180px;
 }
 
 .box1 {
@@ -153,6 +183,32 @@ main .banner img {
 .box3 {
   width: 100px;
   height: 100px;
+  margin-left: -10px;
+}
+
+/* rigth content */
+.cite {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fec63e;
+}
+
+.cite_rigth {
+  width: 300px;
+  height: 300px;
+  margin-right: 200px;
+  font-size: 20px;
+}
+
+.cite blockquote {
+  width: 100%;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+  text-align: justify;
 }
 
 /* Footer */
@@ -163,7 +219,6 @@ footer {
   display: flex;
   background-color: #d00000;
   justify-content: space-around;
-  /* position: absolute; */
 }
 
 .foot p {
@@ -204,20 +259,12 @@ footer ul li {
   /* Main */
 
   main {
-    height: 110%;
+    height: 100%;
   }
   .main_information {
     height: 200px;
     padding: 30px;
-    margin: 0px 0px 10px 50px;
-  }
-
-  .radio {
-    margin-top: 60px;
-  }
-
-  .boxes {
-    margin: 60px 0px 0px 50px;
+    margin: 100px 0px 10px 50px;
   }
 }
 
@@ -241,12 +288,12 @@ footer ul li {
   /* Main */
 
   main {
-    height: 110%;
+    height: 100%;
   }
   .main_information {
     height: 200px;
     padding: 30px;
-    margin: 0px 0px 10px 50px;
+    margin: 100px 0px 10px 50px;
   }
 
   .circle {
@@ -256,12 +303,27 @@ footer ul li {
     height: 120px;
   }
 
-  .radio {
-    margin-top: 60px;
-  }
-
   .boxes {
     display: none;
+  }
+  .cite {
+    display: none;
+  }
+
+  .main_about {
+    width: 100%;
+  }
+
+  .main_about h3 {
+    width: 100%;
+
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .main_about p {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -273,14 +335,11 @@ footer ul li {
     width: 100%;
     height: 200px;
     background-color: #d00000;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-    /* margin-bottom: -50px; */
   }
 
   header .logo {
-    /* display: flex; */
     margin: 20px;
   }
 
@@ -293,8 +352,6 @@ footer ul li {
   .list_menu ul li {
     width: 100%;
     font-size: 12px;
-    /* margin: 4px; */
-    /* padding: 10px 10px; */
     font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
       sans-serif;
     color: #fec63e;
@@ -304,6 +361,7 @@ footer ul li {
 
   main {
     height: 600px;
+    overflow: hidden;
   }
 
   .banner {
@@ -312,7 +370,7 @@ footer ul li {
 
   .main_information {
     width: 100%;
-    margin: 0px 30px;
+    margin: 0px;
   }
 
   .main_information h3 {
@@ -342,11 +400,36 @@ footer ul li {
     width: 100px;
     height: 100px;
     position: relative;
-    /* display: none; */
   }
 
   .boxes {
     display: none;
+  }
+  .cite {
+    display: none;
+  }
+  .about {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    justify-content: center;
+  }
+
+  .main_about {
+    width: 340px;
+    margin: 30px 0px 0px -40px;
+    display: column;
+    justify-content: space-between;
+  }
+
+  .main_about h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .main_about p {
+    font-size: 14px;
+    line-height: 20px;
   }
 
   /* Footer */
