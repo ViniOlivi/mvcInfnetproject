@@ -4,6 +4,7 @@ const path = require("path");
 const generatorController = require("./controllers/generator-controller");
 const Joi = require("joi");
 const app = express();
+const PORT = process.env.PORT || 3001;
 
 // middleware
 app.set("view engine", "ejs");
@@ -47,7 +48,7 @@ app.get("/form", generatorController.get); //envia algo, expor uma url para aces
 app.post("/form", generatorController.post); //recebe algo, acessar uma url para acesso ,validate,
 
 //call server
-app.listen(3001, () => {
+app.listen(PORT, () => {
   console.log("servidor rolando");
   console.log("fim do index");
 });
