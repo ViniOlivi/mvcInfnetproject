@@ -272,7 +272,6 @@ footer ul li {
 /* Header */
 @media only screen and (min-width: 878px) and (max-width: 1199px) {
   header {
-    background-color: #d00000;
     justify-content: space-around;
     align-items: center;
   }
