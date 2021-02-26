@@ -326,6 +326,10 @@ footer ul li {
     margin-left: 20px;
   }
 
+  main {
+    height: 110%;
+  }
+
   .circle {
     right: 5%;
     top: 38%;
@@ -354,7 +358,7 @@ footer ul li {
 
   /* Main */
   main {
-    height: 100%;
+    height: 110%;
   }
 
   .main_down {
