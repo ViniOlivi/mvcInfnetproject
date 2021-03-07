@@ -2,7 +2,6 @@
 const express = require("express"); //server http
 const path = require("path");
 const generatorController = require("./controllers/generator-controller");
-const Joi = require("joi");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -10,26 +9,7 @@ const PORT = process.env.PORT || 3001;
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
-const bodyParser = require("body-parser");
-app.use(bodyParser.urlencoded());
-
-// // Validation Joi
-// const validate = (req, res, next) => {
-//   // schema
-//   const schema = Joi.object().keys({
-//     name: Joi.string().required(),
-//     email: Joi.string().email().required(),
-//   });
-
-//   const validateReturn = schema.validate(req.body);
-
-//   console.log(validateReturn.error);
-
-//   res.render("form", {
-//     errors: validateReturn.error ? validateReturn.error.details : [],
-//     body: req.body,
-//   });
-// };
+app.use(express.urlencoded());
 
 const handleRaiz = (req, res, next) => {
   res.render("index");

@@ -1,115 +1,38 @@
-* {
-  margin: 0;
-  padding: 0;
-  outline: none;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-}
-
 /* Header-Menu */
-header {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #d00000;
-}
-
-header .logo {
-  padding-top: 5px;
-}
-
-header ul {
-  display: flex;
-  align-items: center;
-}
-
-.list_menu ul li {
-  list-style-type: none;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 20px;
-  margin: 10px;
-  padding: 10px 20px;
-  border: none;
-  background-color: rgba(0, 0, 0, 0.801);
-  color: #fec63e;
-  text-transform: uppercase;
-  border-radius: 10px;
-  font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
-}
-
-#btn1 {
-  padding: 20px;
-}
-
-.list_menu ul li:hover {
-  transition: 0.4s;
-  color: #ffffff;
-}
-
-.active {
-  color: #fff;
-}
 
 /* Main */
 
-main {
-  width: 100%;
-  height: 100%;
-  display: column;
-  background: linear-gradient(to left bottom, rgb(8, 8, 8), #586369);
-  justify-content: center;
-  align-items: center;
-}
-
-main .banner img {
-  width: 100%;
-}
-
 /* left content */
-.main_information {
+.main_info {
   width: 400px;
   height: 300px;
   padding: 10px;
-  margin: 80px 0px 20px 103px;
+  background: transparent;
   color: #fec63e;
+  margin: 80px 0px 20px 103px;
 }
 
-.main_information h3 {
+.main_info h3 {
   width: 100%;
   font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
     serif;
   font-size: 30px;
+  padding: 30px;
   text-align: center;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 3px;
 }
 
 .welcome {
   margin-bottom: 50px;
 }
 
-.main_information p {
+.main_info p {
   width: 100%;
+  text-align: justify;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   line-height: 25px;
-  text-align: justify;
 }
 
 .main_about {
@@ -146,8 +69,6 @@ main .banner img {
   width: 150px;
   top: 40%;
   right: 15%;
-  position: absolute;
-  border-radius: 50%;
 }
 
 .radio_cite {
@@ -157,16 +78,6 @@ main .banner img {
   margin-left: 50px;
 }
 
-.radio {
-  margin-left: 166px;
-}
-
-.box_radio {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .boxes {
   display: flex;
   margin-left: 180px;
@@ -213,45 +124,9 @@ main .banner img {
 
 /* Footer */
 
-footer {
-  width: 100%;
-  height: 40px;
-  display: flex;
-  background-color: #d00000;
-  justify-content: space-around;
-}
-
-.foot p {
-  font-size: 14px;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
-  margin-right: 55px;
-  padding: 10px;
-}
-
-.socials {
-  margin-left: 55px;
-  display: inline-flex;
-  align-items: center;
-}
-
-footer ul li {
-  padding: 0px 10px;
-}
-
 /* Laptop */
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
-  header {
-    background-color: #d00000;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  header .logo {
-    margin-left: 20px;
-  }
-
   .list_menu ul li {
     text-align: center;
   }
@@ -261,7 +136,7 @@ footer ul li {
   main {
     height: 125%;
   }
-  .main_information {
+  .main_info {
     height: 200px;
     padding: 30px;
     margin: 100px 0px 10px 50px;
@@ -271,25 +146,11 @@ footer ul li {
 /* Responsivo Tablet */
 /* Header */
 @media only screen and (min-width: 878px) and (max-width: 1199px) {
-  header {
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  header .logo {
-    margin-left: 20px;
-  }
-
-  .list_menu ul li {
-    text-align: center;
-  }
+  /* Header */
 
   /* Main */
 
-  main {
-    height: 110%;
-  }
-  .main_information {
+  .main_info {
     height: 200px;
     padding: 30px;
     margin: 100px 0px 10px 50px;
@@ -330,36 +191,14 @@ footer ul li {
 
 @media only screen and (max-width: 877px) {
   header {
-    display: flex;
-    width: 100%;
-    height: 200px;
-    background-color: #d00000;
-    align-items: center;
-    justify-content: center;
   }
 
   header .logo {
     margin: 20px;
   }
 
-  .list_menu ul {
-    width: 80%;
-    padding: 10px;
-    flex-wrap: wrap;
-  }
-
-  .list_menu ul li {
-    width: 100%;
-    font-size: 12px;
-    font-family: "new rocker", "Franklin Gothic Medium", "Arial Narrow", Arial,
-      sans-serif;
-    color: #fec63e;
-    text-align: center;
-    flex-direction: column;
-  }
-
   main {
-    height: 600px;
+    height: 75%;
     overflow: hidden;
   }
 
@@ -367,29 +206,30 @@ footer ul li {
     display: none;
   }
 
-  .main_information {
-    width: 100%;
-    margin: 0px;
+  .radio_cite {
+    /* display: column; */
+    width: 400px;
+    height: 300px;
+    margin-left: 10px;
   }
 
-  .main_information h3 {
+  .main_info {
+    margin: 0px 0px 0px -20px;
+  }
+
+  .main_info h3 {
     width: 80%;
     font-size: 24px;
     padding: 30px;
     margin: 0px 20px;
   }
 
-  .main_information p {
+  .main_info p {
     width: 90%;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     line-height: 20px;
     margin: 0 auto;
-  }
-
-  .main_information cite {
-    font-size: 14px;
-    margin-left: 25px;
   }
 
   .circle {
@@ -404,9 +244,22 @@ footer ul li {
   .boxes {
     display: none;
   }
-  .cite {
-    display: none;
+
+  .cite_rigth {
+    width: 300px;
+    height: 300px;
+    margin-right: 0px;
+    margin-left: 20px;
   }
+
+  .cite_rigth blockquote {
+    font-size: 12px;
+  }
+
+  .cite_rigth cite {
+    font-size: 10px;
+  }
+
   .about {
     display: flex;
     width: 100%;
@@ -439,12 +292,12 @@ footer ul li {
 
   .foot p {
     margin-right: 0px;
-    padding: 0px 25px;
+    padding: 0px 2px;
   }
 
   .socials {
     margin-left: 0px;
-    padding: 0px 25px;
+    padding: 0px 2px;
   }
 }
 
