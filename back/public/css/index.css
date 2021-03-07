@@ -190,9 +190,6 @@
 /* Smartphone */
 
 @media only screen and (max-width: 877px) {
-  header {
-  }
-
   header .logo {
     margin: 20px;
   }
